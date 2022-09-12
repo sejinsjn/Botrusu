@@ -1,0 +1,25 @@
+Metadata-Version: 1.1
+Name: dhook
+Version: 0.0.1
+Summary: Discord Webhooks
+Home-page: UNKNOWN
+Author: Ateş Selim Özgür
+Author-email: atesselimozgur@gmail.com
+License: MIT
+Description: This python library is for using discord webhooks.
+        
+        Change Log
+        ==========
+        
+        0.0.1
+        ------------------
+        - First release
+Keywords: webhook
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
