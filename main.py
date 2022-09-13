@@ -22,11 +22,9 @@ pex_hook = Webhook("https://discord.com/api/webhooks/1018978349386838037/5jtH6Zl
 
 stalker_hook = Webhook("https://discord.com/api/webhooks/1018984309748662323/eqkqrasXG4IVSrjEjKjjYjWBlb49uVSTlbhpufK5lGV1n0O1naddFC5NHMz_p2bth5yt")
 
-
 ptrades = reddit.subreddit("pokemontrades")
 pex = reddit.subreddit("Pokemonexchange")
-
-test = reddit.subreddit("memes")
+test = reddit.subreddit("askreddit")
 
 keep_alive()
 
@@ -49,7 +47,7 @@ def create_comment_embed(comment):
   )
   return embed
 
-bad_ppl = ["Theduskwolf", "sejin_mb", "serenity-as-ice", "KaitoGL"]
+bad_ppl = ["Theduskwolf", "KaitoGL", "SwiftGoten" "sejin_mb", "serenity-as-ice", "bwo0"]
 
 def get_comments():
   for comment in ptrades.stream.comments(skip_existing=True):
@@ -70,7 +68,7 @@ def get_pex():
   for submission in pex.stream.submissions(skip_existing=True):
     if(str(submission.link_flair_text) == "Selling Virtual"):
       pex_hook.send(embed=create_embed(submission))
-      
+
 ptrades_thread = threading.Thread(target=get_ptrades)
 pex_thread = threading.Thread(target=get_pex)
 comments_thread = threading.Thread(target=get_comments)
