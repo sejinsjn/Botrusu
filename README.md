@@ -1,12 +1,16 @@
 # Botrusu
 
-Bot for a private server. The only task it has is pulling new posts from specific subreddits if flair matches and posts it on the specified discord channel.
-Is pretty static but if you know how to add your own discord channels and subreddits feel free to use it.
+This is my bot for my private server. It pulls posts and comments from specific subreddits on Reddit.
 
-Attention: You also need to create your own discord bot in discord and add the login thing into the code.
+Its not dynamic. Means you need to add the channel ids manually into the code. You also need to add the client token you get from discord when creating a bot.
+
+To create your discord bot:
+- go to https://discord.com/developers/applications
+- create application
+- get Token and add into the code
 
 For discord channels:
- - Enable developer mode (not sure how its exactly called)
- - Right-click on a discord 
+ - Enable developer mode
+ - Right-click on a discord channel
  - Copy ID
  - Insert your ID instead of mine.
